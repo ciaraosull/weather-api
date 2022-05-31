@@ -2,7 +2,7 @@
 from django.db import models
 
 
-class Sensors(models.Model):
+class Sensor(models.Model):
     """Model to describe the Sensors Class"""
     sensor_id = models.IntegerField(null=True, blank=True, unique=True)
     country = models.CharField(max_length=150)
