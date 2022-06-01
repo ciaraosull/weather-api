@@ -9,4 +9,4 @@ def sensor_list(request):
     """Function to get all the sensor data, serialize and return json """
     sensors = Sensor.objects.all()
     serializer = SensorSerializer(sensors, many=True)
-    return JsonResponse({'sensors': serializer.data}, safe=False)
+    return JsonResponse({'sensors': serializer.data})
