@@ -17,8 +17,8 @@
 
 ### Version Control
 
-### Set Up Locally
-## Install Django & Supporting Libraries:
+## Set Up Locally
+
     1   fork the repository from GitHub
     2   pip3 install 'django<4' gunicorn
     3   pip3 install dj_database_url psycopg2 (libraries needed for postgres)
