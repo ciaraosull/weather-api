@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework.urlpatterns import format_suffix_patterns
 from sensors import views
 
 urlpatterns = [
@@ -22,3 +23,6 @@ urlpatterns = [
     path('sensors/', views.sensor_list),
     path('sensors/<int:id>', views.sensor_detail)
 ]
+
+# to allow url to show in json format when /json used
+urlpatterns = format_suffix_patterns(urlpatterns)
