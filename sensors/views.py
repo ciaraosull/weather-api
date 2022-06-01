@@ -1,3 +1,12 @@
+"""Create endpoints to access sensor data from """
 from django.shortcuts import render
+from django.http import JsonResponse
+from .models import Sensor
+from .serializers import SensorSerializer
 
-# Create your views here.
+
+def sensor_list(request):
+    """Function to get all the sensor data, serialize and return json """
+    sensors = Sensor.objects.all()
+    serializer = SensorSerializer(sensors, many=True)
+    return JsonResponse(serializer.data, safe=False)
