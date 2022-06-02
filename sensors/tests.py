@@ -1,5 +1,6 @@
 import pytest
 from django.urls import reverse
+from rest_framework.response import Response
 from sensors.models import Sensor
 from sensors.serializers import SensorSerializer
 
@@ -14,6 +15,20 @@ def test_sensor_list(client):
 
     sensor = Sensor.objects.all()
     expected_data = SensorSerializer(sensor, many=True).data
+
+    assert response.status_code == 200
+    assert response.data == expected_data
+
+
+@pytest.mark.django_db  # gives access to database
+def test_sensor_details(client):
+    """Function for post"""
+    url = reverse('sensor-list')
+    response = client.get(url)
+
+    sensor = Sensor.objects.get(pk=0)
+    serializer = SensorSerializer(sensor)
+    expected_data = Response(serializer.data)
 
     assert response.status_code == 200
     assert response.data == expected_data

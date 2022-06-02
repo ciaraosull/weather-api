@@ -28,7 +28,7 @@ def sensor_list(request, format=None):  # for url patterns to be formatted
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def sensor_detail(request, id, format=None):  # get a sensor by id
-    """Function to GET, POST, DELETE sensor data"""
+    """Function to GET, PUT, DELETE sensor data"""
 
     try:
         sensor = Sensor.objects.get(pk=id)  # if id valid request

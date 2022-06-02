@@ -19,9 +19,9 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from sensors import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin'),
     path('sensors/', views.sensor_list, name='sensor-list'),
-    path('sensors/<int:id>', views.sensor_detail, name='sensor-detail')
+    path('sensors/<int:id>', views.sensor_detail, name='sensor_detail')
 ]
 
 # to allow url to show in json format when /json used
