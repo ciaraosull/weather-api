@@ -59,6 +59,8 @@ b)	Delete this sensor and it’s associated data.
 
 *   Try / Except statements were used throughout the views to ensure the user was given the status error and a message when an exception occurred such as 400 when a bad request is made, 404 if an item is not found on search, and 201 when item created.
 
+If you would like to view some of the features mentioned above please view this [Walk Through Video](static/media/readme/weatherapi-video.mp4)
+
 ### Features Left to Implement:
 
 As this was a proof of concept project not all features were implemented at this stage.  Features that could be worked on at a later date include:
