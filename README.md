@@ -96,7 +96,7 @@ As this was a proof of concept project not all features were implemented at this
 
 
 ### Validator Testing:
-*   Pep8 online was used for validating the python files. Not all python files were checked due to time constraints but the sterilizers.py file was deemed the most important to check at this point.
+*   Pep8 online was used for validating the python files. Not all python files were checked due to time constraints but the views.py & model.py files were deemed the most important to check at this point.
 
 
 ### Framework & Language:
