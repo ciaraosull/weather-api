@@ -11,9 +11,9 @@ Important enpoints include:
 
     *   /sensors.json
     *   /admin
-    *   /sensors/
-    *   /sensors/1/
-    *   /sensors/2/
+    *   /sensors
+    *   /sensors/1
+    *   /sensors/2
 
 ## User Stories
 1   As a user I would like to be able to navigate to the site so that I can view the api data from the sensors in json format.
