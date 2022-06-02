@@ -87,8 +87,6 @@ As this was a proof of concept project not all features were implemented at this
 ### Validator Testing:
 *   Pep8 online was used for validating the python files. Not all python files were checked due to time constraints but the sterilizers.py file was deemed the most important to check at this point.
 
-Screenshots [Here](#)
-
 
 ### Framework & Language:
 *   Django Framework
@@ -127,12 +125,12 @@ Screenshots [Here](#)
 
 ## Credits
 ### Research Links
-[Django Rest Framework Docs](https://www.django-rest-framework.org/)
-[Django Framework Docs](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/)
-[Django Rest API - GeeksforGeeks](https://www.geeksforgeeks.org/how-to-create-a-basic-api-using-django-rest-framework/)
-[Building Django Crud - Article](https://www.sankalpjonna.com/learn-django/building-a-django-crud-application-in-minutes)
-[Build Django Framework API - YouTube](Django REST Framework - Build an API from Scratch)
-[Testing in Djago Rest - Article](https://tamerlan.dev/how-to-test-drf-apis/)
-[Testing with Pytest](https://djangostars.com/blog/django-pytest-testing/)
-[Generic Views in Django Rest](https://www.django-rest-framework.org/api-guide/generic-views/)
-[Simple Restful API - YouTube](https://www.youtube.com/watch?v=BSHRftLtPEg)
+*   [Django Rest Framework Docs](https://www.django-rest-framework.org/)
+*   [Django Framework Docs](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/)
+*   [Django Rest API - GeeksforGeeks](https://www.geeksforgeeks.org/how-to-create-a-basic-api-using-django-rest-framework/)
+*   [Building Django Crud - Article](https://www.sankalpjonna.com/learn-django/building-a-django-crud-application-in-minutes)
+*   [Build Django Framework API - YouTube](Django REST Framework - Build an API from Scratch)
+*   [Testing in Djago Rest - Article](https://tamerlan.dev/how-to-test-drf-apis/)
+*   [Testing with Pytest](https://djangostars.com/blog/django-pytest-testing/)
+*   [Generic Views in Django Rest](https://www.django-rest-framework.org/api-guide/generic-views/)
+*   [Simple Restful API - YouTube](https://www.youtube.com/watch?v=BSHRftLtPEg)
