@@ -23,12 +23,12 @@ def test_sensor_list(client):
 @pytest.mark.django_db  # gives access to database
 def test_sensor_details(client):
     """Function for put"""
-    url = reverse('sensor_detail')
+    url = reverse('sensor-list')
     response = client.get(url)
 
-    sensor = Sensor.objects.get(all)
+    sensor = Sensor.objects.get(pk=id)
     serializer = SensorSerializer(sensor)
+    serializer.save()
     expected_data = Response(serializer.data)
 
-    assert response.status_code == 200
     assert response.data == expected_data
