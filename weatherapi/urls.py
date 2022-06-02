@@ -20,8 +20,8 @@ from sensors import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sensors/', views.sensor_list),
-    path('sensors/<int:id>', views.sensor_detail)
+    path('sensors/', views.sensor_list, name='sensor-list'),
+    path('sensors/<int:id>', views.sensor_detail, name='sensor-detail')
 ]
 
 # to allow url to show in json format when /json used
