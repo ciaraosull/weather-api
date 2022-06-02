@@ -35,6 +35,7 @@ This application takes the users stories mentioned above into consideration to c
 *   By going to the /admin endpoint, signing into Django’s build in GUI for admin users and navigating to the sensors section on the left:
 
 a)	Users can view all the sensors with their meta data listed.
+
 b)	There is also the option to add or register a sensor by id and include meta data such as country & city.
 
 c)	Users can also select a specific sensor to view the metrics associated with that sensor.
@@ -51,6 +52,7 @@ b.	Users can then add sensors here and include all relevant data associated with
 
 *   By including the sensors id in the endpoint, for example /sensors/1 the user can:
 a)	View this sensor’s data and update accordingly by using PUT.
+
 b)	Delete this sensor and it’s associated data.
 
 *   Django comes with it’s own input validation and exception handling on the /admin site once the data entered in the model is placed as required.  Users are given feedback through statements and flash messages when they sign in, input data and sign out.
@@ -107,6 +109,7 @@ As this was a proof of concept project not all features were implemented at this
     6   python3 manage.py makemigrations
     7   python3 manage.py migrate
     8   double check requirements.txt has the following:
+
         *  asgiref==3.5.2
         *   dj-database-url==0.5.0
         *   Django==3.2.13
@@ -120,6 +123,7 @@ As this was a proof of concept project not all features were implemented at this
         *   pytest-django==4.5.2
         *   pytz==2022.1
         *   sqlparse==0.4.2
+
     9   open up local host and go to /admin & use superuser login details
 
 
